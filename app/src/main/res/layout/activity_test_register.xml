@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloudyback"
+    tools:context=".TestRegister">
+
+
+
+    <ImageView
+        android:id="@+id/Register_applogo"
+        android:layout_width="400pt"
+        android:layout_height="100pt"
+        android:backgroundTintMode="add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ru"/>
+
+    <EditText
+        android:id="@+id/Register_username_input_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_applogo"
+        android:background="@drawable/rkinputs"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="#8A0808"
+        android:textColorHint="#8A0808"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/Register_phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_username_input_input"
+        android:background="@drawable/rkinputs"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="#8A0808"
+        android:textColorHint="#8A0808"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+
+        ></EditText>
+
+
+    <EditText
+        android:id="@+id/Register_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_phone_number_input"
+        android:background="@drawable/rkinputs"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:textColor="#8A0808"
+        android:textColorHint="#8A0808"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/Register_Bank_Account_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_password_input"
+        android:background="@drawable/rkinputs"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Bank Account Number"
+        android:textColor="#8A0808"
+        android:textColorHint="#8A0808"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+
+        ></EditText>
+
+
+    <EditText
+        android:id="@+id/Register_Bank_Name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_Bank_Account_input"
+        android:background="@drawable/rkinputs"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Bank Name"
+        android:textColor="#8A0808"
+        android:textColorHint="#8A0808"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+
+        ></EditText>
+
+
+
+
+
+    <Button
+        android:id="@+id/Register_btn"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rkbuttons"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text=" Create Account "
+        android:textColor="#8A0808"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlCompat"
+        android:layout_below="@+id/Register_Bank_Name_input"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic|bold"
+
+        />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>

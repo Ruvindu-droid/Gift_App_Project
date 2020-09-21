@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">Gift_App</string>
+
+
+    <string name="Welcome_Massage">Welcome To The Gift </string>
+    <string name="Create_Account_Selection_Button">Join With Us</string>
+    <string name="Login_Selection_Btn">Already Have an Account? Log In</string>
+
+
+    <string name="Phone_number_for_Login">Phone Number</string>
+    <string name="Password_for_Login">Password</string>
+    <string name="Remember_Me_tag_for_Login">Remember Me</string>
+    <string name="Forgrct_Password_Link_for_Login">Forgect Password</string>
+    <string name="Login_Button_for_Login">Log In</string>
+
+
+    <string name="Change_Profile_Link_for_edit_profile">Change Profile</string>
+    <string name="Close_Button_for_edit_profile">Close</string>
+    <string name="Phoone_Number_for_edit_profile">Phone Number...</string>
+    <string name="Full_Name_for_edit_profile">Full Name...</string>
+    <string name="Address_for_edit_profile">Your Address...</string>
+    <string name="Ban_Acc_No_for_edit_profile">Your Bank Account Number...</string>
+    <string name="Bank_Name_for_edit_profile">Bank Name...</string>
+    <string name="Update_Button_for_edit_profile">Update</string>
+
+
+    <string name="Title_for_Add_Recever_Details">Add Gift Receiver Details</string>
+    <string name="Name_of_The_Receiver_for_Add_Recever_Details">Name of The Receiver</string>
+    <string name="Recever_Address_for_Add_Recever_Details">Receiver address</string>
+    <string name="Rec_Phoone_Number_for_Add_Recever_Details">Add Gift Receiver Phone Number</string>
+    <string name="Conf_Det_Button_Add_Recever_Details">Conform Details</string>
+
+
+    <string name="Title_For_Edit_Recever_Details">Change Gift Receiver Details</string>
+    <string name="Rec_Nam_For_Edit_Recever_Details">Name of The Receiver</string>
+    <string name="Rec_Addre_Edit_Recever_Details">Receiver Address</string>
+    <string name="Rec_Phone_Edit_Recever_Details">Receiver Phone Number</string>
+    <string name="Update_Button_Edit_Recever_Details">Update Details</string>
+    <string name="Close_Button_for_Edit_Recever_Details">Close</string>
+
+
+    <string name="Title_For_for_Final_Deal">Conform Your Deal</string>
+    <string name="Rec_Nam_Ask_For_Final_Deal">Receiver Name :-</string>
+    <string name="Rec_Nam_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Rec_Addre_Ask_For_Final_Deal">Receiver Address :-</string>
+    <string name="Rec_Addre_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Gift_Pay_Ask_For_Final_Deal">Gift Payment :-</string>
+    <string name="Gift_Pay_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Rap_Pay_Ask_For_Final_Deal">Rapping Payment :-</string>
+    <string name="Rap_Pay_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Trans_Pay_Ask_For_Final_Deal">Transport Payment :-</string>
+    <string name="Trans_Pay_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Tot_Pay_Ask_For_Final_Deal">Total Payment :-</string>
+    <string name="Tot_Pay_For_Final_Deal">XXXXXXXXXXXX</string>
+    <string name="Edit_Rec_Button_For_Final_Deal">Edit Receiver Details</string>
+    <string name="Cancel_deal_Button_For_Final_Deal">Cancel This Deal</string>
+    <string name="Send_Pre_Butt0n_For_Final_Deal">Send My Present</string>
+
+
 </resources>
