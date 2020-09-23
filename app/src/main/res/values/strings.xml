@@ -56,5 +56,8 @@
     <string name="Cancel_deal_Button_For_Final_Deal">Cancel This Deal</string>
     <string name="Send_Pre_Butt0n_For_Final_Deal">Send My Present</string>
 
+    <string name="open_navigation_drawer">Open Navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
+
 
 </resources>

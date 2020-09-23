@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.gift_app.Model.Users;
+import com.example.gift_app.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -121,7 +122,8 @@ public class LoginTest2 extends AppCompatActivity {
                                 Toast.makeText(LoginTest2.this,"Successfully logged in",Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginTest2.this,AkkaHome.class);
+                                Intent intent = new Intent(LoginTest2.this,HomeActivity.class);
+                                Prevalent.currentonlineuser = usersData;
                                 startActivity(intent);
                             }
 

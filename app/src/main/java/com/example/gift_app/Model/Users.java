@@ -1,20 +1,21 @@
 package com.example.gift_app.Model;
 
 public class Users {
-    private String name ,phone ,password,BankName,Account;
+    private String name ,phone ,password,BankName,Account,image; //added variable image (IT19052298)
 
     public Users()
     {
 
     }
 
-    public Users(String name, String phone, String password, String BankName, String account) {
+    public Users(String name, String phone, String password, String BankName, String account, String image) {
         this.name = name;
         this.phone = phone;
         this.password = password;
         this.Account = account;
         this.BankName = BankName;
         this.Account = account;
+        this.image = image;
     }
 
 
@@ -56,5 +57,13 @@ public class Users {
 
     public void setAccount(String account) {
         this.Account = account;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
