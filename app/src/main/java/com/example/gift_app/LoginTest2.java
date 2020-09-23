@@ -112,7 +112,7 @@ public class LoginTest2 extends AppCompatActivity {
                                 Toast.makeText(LoginTest2.this,"Welcome Admin ! You are Successfully logged in",Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginTest2.this,AdminAddNewProductActivity.class);
+                                Intent intent = new Intent(LoginTest2.this,AdminCategoryActivity.class);
                                 startActivity(intent);
                             }
 
