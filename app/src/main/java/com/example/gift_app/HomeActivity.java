@@ -33,6 +33,8 @@ import com.squareup.picasso.Picasso;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
 
+//IT19052298
+
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DatabaseReference ProductsRef;
@@ -58,8 +60,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(HomeActivity.this,CartActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -117,14 +119,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         holder.txtProductPrice.setText("Price Rs = " + model.getPrice());
                         Picasso.get().load(model.getImage()).into(holder.imageView);
 
-//                        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//                            @Override
-//                            public void onClick(View view) {
-//                                Intent intent = new Intent(HomeActivity.this,ProductDetailsActivity.class);
-//                                intent.putExtra("pid",model.getPid());
-//                                startActivity(intent);
-//                            }
-//                        });
+                        holder.itemView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(HomeActivity.this,ProductDetailsActivity.class);
+                                intent.putExtra("pid",model.getPid());
+                                startActivity(intent);
+                            }
+                        });
                     }
 
                     @NonNull
@@ -188,19 +190,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_cart)
         {
 
-//            Intent intent = new Intent(HomeActivity.this,CartActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(HomeActivity.this,CartActivity.class);
+            startActivity(intent);
         }
         else if (id == R.id.nav_search)
         {
-//            Intent intent = new Intent(HomeActivity.this,SearchProductsActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(HomeActivity.this,SearchProductsActivity.class);
+            startActivity(intent);
 
         }
-        else if (id == R.id.nav_categories)
-        {
-
-        }
+//        else if (id == R.id.nav_categories)
+//        {
+//
+//        }
         else if (id == R.id.nav_settings)
         {
 
