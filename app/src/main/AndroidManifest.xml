@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminAddNewProductActivity"></activity>
+        <activity android:name=".SearchProductsActivity"></activity>
+        <activity android:name=".HashiniActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".AdminCategoryActivity" />
+        <activity android:name=".AdminAddNewProductActivity" />
         <activity android:name=".SettiingsTest" />
-        <activity android:name=".AkkaHome" />
         <activity android:name=".LoginTest2" />
         <activity android:name=".TestRegister" />
         <activity android:name=".MainActivity">
