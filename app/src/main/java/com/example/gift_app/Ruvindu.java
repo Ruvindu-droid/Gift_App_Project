@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class HashiniActivity extends AppCompatActivity {
+public class Ruvindu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hashini);
+        setContentView(R.layout.activity_ruvindu);
     }
 }

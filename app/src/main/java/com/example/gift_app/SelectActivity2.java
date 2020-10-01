@@ -43,7 +43,7 @@ public class SelectActivity2 extends AppCompatActivity {
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SelectActivity2.this,Tharushika.class);
+                Intent intent = new Intent(SelectActivity2.this,Santa.class);
                 intent.putExtra("Total Price",totalPrice);
                 startActivity(intent);
             }
