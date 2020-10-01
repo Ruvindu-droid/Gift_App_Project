@@ -71,7 +71,7 @@ public class CartActivity extends AppCompatActivity {
 
                 //txtTotalAmount.setText("Total Price = Rs "+ valueOf(overTotalPrice));
 
-                Intent intent = new Intent(CartActivity.this,HashiniActivity.class);
+                Intent intent = new Intent(CartActivity.this,SplashScreenActivity2.class);
                 intent.putExtra("Total Price", valueOf(overTotalPrice));
                 startActivity(intent);
                 finish();
