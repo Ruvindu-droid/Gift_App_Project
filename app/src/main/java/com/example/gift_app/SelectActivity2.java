@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SelectActivity2 extends AppCompatActivity {
     Button custombtn,choosebtn,nextbtn;
-    String totalPrice;
+    String totalPrice="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class SelectActivity2 extends AppCompatActivity {
 
         //Intent for total price
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
         custombtn = findViewById(R.id.custombtn);
         choosebtn = findViewById(R.id.choosebtn);

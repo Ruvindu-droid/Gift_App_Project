@@ -18,7 +18,7 @@ public class SplashScreenActivity2 extends AppCompatActivity {
     Animation topAnim, bottomAnim;
     //ImageView img;
     TextView logo;
-    String totalPrice;
+    String totalPrice = "";
 
 
     @Override
@@ -29,7 +29,7 @@ public class SplashScreenActivity2 extends AppCompatActivity {
         //Intent price
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
         //animation call to the project
         topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);

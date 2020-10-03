@@ -60,4 +60,6 @@
     <string name="close_navigation_drawer">Close navigation drawer</string>
 
 
+    <string name="channel_name">Channal name</string>
+    <string name="channel_description">Channal Discription</string>
 </resources>

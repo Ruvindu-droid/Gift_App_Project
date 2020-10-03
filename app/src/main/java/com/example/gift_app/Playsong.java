@@ -11,7 +11,7 @@ import android.widget.Button;
 public class Playsong extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     private Button btn8;
-    private String totalPrice;
+    private String totalPrice="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class Playsong extends AppCompatActivity {
         btn8 = findViewById(R.id.button7);
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
 
         btn8.setOnClickListener(new View.OnClickListener() {

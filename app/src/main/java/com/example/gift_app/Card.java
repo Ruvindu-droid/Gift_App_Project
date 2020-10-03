@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Card extends AppCompatActivity {
     private Button btn6;
-    private String totalPrice;
+    private String totalPrice ="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +18,7 @@ public class Card extends AppCompatActivity {
         btn6 = findViewById(R.id.btncard);
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
 
         btn6.setOnClickListener(new View.OnClickListener() {

@@ -85,8 +85,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
        userNameTextView.setText(Prevalent.currentonlineuser.getName());
-//        Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
-
+        Picasso.get().load(Prevalent.currentonlineuser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
+//IT19062884 I add this here
 
         recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
@@ -206,6 +206,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         else if (id == R.id.nav_settings)
         {
 
+              Intent intent = new Intent(HomeActivity.this,SettingsRK.class);
+              startActivity(intent);
         }
         else if (id == R.id.nav_logout)
         {

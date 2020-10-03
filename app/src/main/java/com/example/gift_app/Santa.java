@@ -10,7 +10,7 @@ import android.widget.Button;
 public class Santa extends AppCompatActivity {
 
     private Button btn2;
-    private String totalPrice;
+    private String totalPrice ="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -18,7 +18,7 @@ public class Santa extends AppCompatActivity {
         setContentView(R.layout.activity_santa);
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
 
         btn2 = findViewById(R.id.button2);

@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/card"
     tools:context=".Ruvindu">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/final_Detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/Title_for_Add_Recever_Details"
+        android:textColor="#000000"
+
+        android:textSize="22sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/name_of_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/final_Detail_title"
+        android:hint="@string/Name_of_The_Receiver_for_Add_Recever_Details"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/Receivers_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_of_receiver"
+        android:hint="@string/Recever_Address_for_Add_Recever_Details"
+        android:layout_margin="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/Receivers_Phone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Receivers_address"
+        android:hint="@string/Rec_Phoone_Number_for_Add_Recever_Details"
+        android:layout_margin="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/Enter_Final_Details_btn"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rkbuttons"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="@string/Conf_Det_Button_Add_Recever_Details"
+        android:textColor="#8A0808"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlCompat"
+        android:layout_below="@+id/Receivers_Phone_Number"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic|bold"
+
+        />
+
+
+</RelativeLayout>

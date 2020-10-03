@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Cake extends AppCompatActivity {
     private Button btn3;
-    private String totalPrice;
+    private String totalPrice ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class Cake extends AppCompatActivity {
         setContentView(R.layout.activity_cake);
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
         btn3 = findViewById(R.id.button4);
 

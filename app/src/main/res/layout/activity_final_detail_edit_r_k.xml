@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card"
+    tools:context=".FinalDetailEditRK">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Close_final_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Close_Button_for_Edit_Recever_Details"
+                    android:textColor="#8A0808"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"></TextView>
+
+
+
+                <TextView
+                    android:id="@+id/update_final_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Update_Button_Edit_Recever_Details"
+                    android:textColor="#8A0808"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    ></TextView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/Change_final_img_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title_For_Edit_Recever_Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_bar_settings"
+        android:layout_marginTop="100dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/Edit_name_of_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Change_final_img_title"
+        android:hint="@string/Rec_Nam_For_Edit_Recever_Details"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/Receivers_address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_name_of_receiver"
+        android:hint="@string/Rec_Addre_Edit_Recever_Details"
+        android:layout_margin="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edit_Receivers_Phone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Receivers_address_edit"
+        android:hint="@string/Rec_Phone_Edit_Recever_Details"
+        android:layout_margin="15dp"
+
+        android:padding="15dp"
+        android:background="@drawable/rkinputs"
+        android:textColor="#8A0808"
+        android:textColorHint="#6E6E6E"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" >
+
+
+    </EditText>
+
+
+</RelativeLayout>

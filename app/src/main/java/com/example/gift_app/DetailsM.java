@@ -26,7 +26,7 @@ public class DetailsM extends AppCompatActivity {
     Button btnSave,btnShow,btnUpdate,btnDelete,btnFreeNxt;
     DatabaseReference dbref;
     Student std;
-    private String totalPrice;
+    private String totalPrice="";
 
     private void clearControls(){
         txtID.setText("");
@@ -57,7 +57,7 @@ public class DetailsM extends AppCompatActivity {
         std = new Student();
 
         Intent intent = new Intent();
-        totalPrice = intent.getStringExtra("Total Price");
+        totalPrice = getIntent().getStringExtra("Total Price");
 
 
         //save button

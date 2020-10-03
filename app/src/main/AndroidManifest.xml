@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gift_app">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- optional (IT19062884 added for image cropping ) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- optional (IT19062884 added for image cropping ) -->
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ruvindu"></activity>
+        <activity android:name=".SettingsRK"></activity>
+        <activity android:name=".FinalPageRK" />
+        <activity android:name=".FinalDetailEditRK" />
+        <activity android:name=".Ruvindu" />
         <activity android:name=".DetailsM" />
         <activity android:name=".Playsong" />
         <activity android:name=".Card" />
@@ -26,7 +33,6 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".AdminCategoryActivity" />
         <activity android:name=".AdminAddNewProductActivity" />
-        <activity android:name=".SettiingsTest" />
         <activity android:name=".LoginTest2" />
         <activity android:name=".TestRegister" />
         <activity android:name=".MainActivity">
@@ -36,6 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/> <!-- optional (IT19062884 added for image cropping ) -->
+
+
 
         <meta-data
             android:name="preloaded_fonts"
